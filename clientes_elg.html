@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <style>
+        body{
+          background-color: #DBDBDB;
+        }
+
+        #tamanhocontainer{
+          width: 550px;
+          margin-top: 60px;
+        }
+
+        #botao{
+          background-color: #5B5B5B ;
+        }
+
+        #h1{
+            color: #262523;
+            font-style: oblique;
+        }
+  
+      </style>
+</head>
+
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Clientes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class = "container" id="tamanhocontainer">
+  <br>
+
+  <h1 id="h1">Cadastro de Clientes</h1>
+
+
+  <div class="row">
+      <form>
+          <br>
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Nome completo" required>
+              <label for="floatingInput">Nome do cliente</label>
+          </div>
+          
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Endereço" required>
+              <label for="floatingInput">Endereço</label>
+          </div>
+          
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Cidade" required>
+              <label for="floatingInput">Cidade</label>
+          </div>
+          
+          <div class="form-floating">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                <option selected>Selecione o Estado</option>
+                <option value="1">AC</option>
+                <option value="2">AL</option>
+                <option value="3">AM</option>
+                <option value="4">AP</option>
+                <option value="5">BA</option>
+                <option value="7">CE</option>
+                <option value="8">DF</option>
+                <option value="9">ES</option>
+                <option value="10">GO</option>
+                <option value="11">MA</option>
+                <option value="12">MG</option>
+                <option value="13">MS</option>
+                <option value="14">MT</option>
+                <option value="15">PA</option>
+                <option value="16">PB</option>
+                <option value="17">PE</option>
+                <option value="18">PI</option>
+                <option value="19">PR</option>
+                <option value="20">RJ</option>
+                <option value="21">RN</option>
+                <option value="22">RO</option>
+                <option value="23">RR</option>
+                <option value="24">RS</option>
+                <option value="25">SC</option>
+                <option value="26">SE</option>
+                <option value="27">SP</option>
+                <option value="28">TO</option>
+              </select>
+              <label for="floatingSelect">Estado</label>
+          </div>
+          <br>
+          <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="floatingInput" placeholder="Telefone" required>
+              <label for="floatingInput">Telefone</label>
+          </div>
+          
+          <div class="form-floating">
+              <textarea class="form-control" placeholder="Comentários" id="floatingTextarea2" style="height: 120px"></textarea>
+              <label for="floatingTextarea2">Comentários</label>
+            </div>
+        <br>
+        <button type="button" class="btn btn-dark">Salvar</button>
+        <button type="button" class="btn btn-dark">Pesquisar</button>
+        <button type="button" class="btn btn-dark">Alterar</button>
+        <button type="button" class="btn btn-danger">Excluir</button>
+      </form>
+  </div>
+  <br><br><br><br>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
